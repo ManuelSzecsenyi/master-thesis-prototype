@@ -1,0 +1,20 @@
+<!-- Game state overview -->
+<div class="flex justify-between">
+    <div>Lifepoints: {{this.stateService.state.lifepoints}}</div>
+    <div>Money: {{this.stateService.state.money}}</div>
+</div>
+
+<!-- Game -->
+
+<div>
+    <div>{{this.currentEvent?.title}}</div>
+    <div>{{this.currentEvent?.description}}</div>
+
+    
+    <div class="flex gap-2 mt-5">
+        <button *ngFor="let option of this.currentEvent?.options" (click)="this.decide(option)" class="bg-slate-300 p-4 w-full">{{option.title}}</button>
+    </div>
+    
+</div>
+
+
