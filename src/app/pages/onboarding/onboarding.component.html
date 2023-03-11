@@ -1,0 +1,11 @@
+<ng-container ngSwitch=""></ng-container>
+
+<ng-container [ngSwitch]="this.currentPage">
+
+    <app-ob-profile *ngSwitchCase="0"></app-ob-profile>
+    <app-ob-education *ngSwitchCase="1"></app-ob-education>
+
+</ng-container>
+
+<app-button text="Weiter" (click)="btnClicked(1)"></app-button>
+<app-button *ngIf="this.currentPage > 0" text="Zurück" (click)="btnClicked(-1)" [isPrimary]="false"></app-button>

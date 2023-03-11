@@ -22,5 +22,8 @@ export const events: IEvent[] = [
         probability: 4,
         canHappen: true,
         noOfOccurences: 0,
+        precondition: (state: IState) => { 
+            return state.insurance == "SPECIAL_INSURANCE" 
+        }
     }
 ]

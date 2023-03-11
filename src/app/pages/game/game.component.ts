@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { IEvent, IOption } from 'src/app/models/event.model';
 import { QuestionService } from 'src/app/services/question.service';
 import { StateService } from 'src/app/state.service';
@@ -10,7 +10,7 @@ import { StateService } from 'src/app/state.service';
 })
 export class GameComponent implements OnInit {
 
-  currentEvent?: IEvent 
+  currentEvent?: IEvent;
 
   constructor(
     public stateService: StateService,
@@ -18,17 +18,13 @@ export class GameComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.stateService.createNewGame(
-      "Manuel",
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-    )
-
-    this.getNewEvent();
-    
+    this.getNewEvent();    
   }
+
+  onSwipeUp(event: any) {
+    console.log("up", event);
+  }
+  
 
   decide(option: IOption) {
     this.eventService.makeDecision(option);
@@ -36,7 +32,16 @@ export class GameComponent implements OnInit {
   }
 
   getNewEvent() {
-    this.currentEvent = this.eventService.getEvent()
+    
+    const newEvent = this.eventService.getEvent()
+
+    if(newEvent.canHappen) {
+      this.currentEvent = newEvent
+    } else {
+      console.log("Skipping event");
+      this.getNewEvent();
+    }
+    
   }
 
 }

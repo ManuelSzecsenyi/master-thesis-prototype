@@ -10,9 +10,21 @@ export class StateService {
 
   constructor() { }
 
+  public createNewGame() {
+    this.state = {
+      name: '',
+      job: '',
+      home: '',
+      insurance: '',
+      mobility: '',
+      lifepoints: 100,
+      money: 1000
+    }
+  }
+
   /**
    * Creates a new game with an predefined state
-   */
+   
   public createNewGame(name: string, job: any, home: any, insurance: any, mobility: any) {
     this.state = {
       name:  name,
@@ -23,6 +35,7 @@ export class StateService {
       lifepoints: 100,
       money: 1000
     }
-    
   }
+  
+  */
 }

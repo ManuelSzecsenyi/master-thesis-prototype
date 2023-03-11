@@ -5,6 +5,7 @@ export interface IEvent {
     probability: number;
     canHappen: boolean;
     noOfOccurences: number;
+    precondition?: any;
 }
 
 export interface IOption {
