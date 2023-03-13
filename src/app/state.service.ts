@@ -13,12 +13,11 @@ export class StateService {
   public createNewGame() {
     this.state = {
       name: '',
-      job: '',
-      home: '',
       insurance: '',
       mobility: '',
       lifepoints: 100,
-      money: 1000
+      money: 1000,
+      university: false
     }
   }
 

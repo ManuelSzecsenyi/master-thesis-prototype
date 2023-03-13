@@ -16,6 +16,7 @@ import { ObOverviewComponent } from './pages/onboarding/ob-overview/ob-overview.
 import { OnboardingComponent } from './pages/onboarding/onboarding.component';
 import { FormsModule } from '@angular/forms';
 import { SelectionComponent } from './components/selection/selection.component';
+import { ObJobComponent } from './pages/onboarding/ob-job/ob-job.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { SelectionComponent } from './components/selection/selection.component';
     ObMobilityComponent,
     ObOverviewComponent,
     OnboardingComponent,
-    SelectionComponent
+    SelectionComponent,
+    ObJobComponent
   ],
   imports: [
     BrowserModule,

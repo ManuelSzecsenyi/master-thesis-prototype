@@ -13,4 +13,12 @@
     h2 {
       @apply text-xl mt-3;
     }
+
+    h3 {
+      @apply text-xl mb-1 font-medium;
+    }
+
+    h4 {
+      @apply text-lg mb-1;
+    }
   }

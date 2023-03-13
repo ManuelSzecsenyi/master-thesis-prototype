@@ -1,1 +1,23 @@
-<p>ob-living works!</p>
+<h1>Wohnung</h1>
+
+<div class="text-center grid gap-4 ">
+
+    <app-selection 
+        *ngFor="let apartment of this.LIVING_LIST"    
+        (click)="this.state.state.apartment = apartment"
+        [active]="this.state.state.apartment === apartment">
+            <img class="w-32 mx-auto" src="{{apartment.imgUrl}}">
+            <h3>{{apartment.name}}</h3>
+            
+            <div class="flex justify-between">
+                <h4 class="leading-4 mt-3">€ {{apartment.rent}},- <br>
+                    <span class="text-sm">pro Monat</span></h4>
+
+                <h4 class="leading-4 mt-3">{{apartment.distance}} km <br>
+                    <span class="text-sm">Pendeldistanz</span></h4>
+    
+            </div>
+            
+    </app-selection>
+
+</div>

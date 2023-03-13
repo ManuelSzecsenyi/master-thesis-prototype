@@ -8,7 +8,7 @@ import { StateService } from 'src/app/state.service';
 })
 export class OnboardingComponent implements OnInit {
 
-  currentPage = 0;
+  currentPage = 3;
 
   constructor(
     private state: StateService,

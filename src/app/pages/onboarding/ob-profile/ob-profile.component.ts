@@ -34,5 +34,4 @@ export const AVATAR_LIST: IAvatar[] = [
     { imgUrl: 'https://api.dicebear.com/5.x/adventurer/svg?seed=Snowball' },
     { imgUrl: 'https://api.dicebear.com/5.x/adventurer/svg?seed=Sheba' },
     { imgUrl: 'https://api.dicebear.com/5.x/adventurer/svg?seed=Pepper' },
-    
 ]

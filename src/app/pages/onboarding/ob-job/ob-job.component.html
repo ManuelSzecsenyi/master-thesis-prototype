@@ -1,0 +1,16 @@
+<h1>Beruf</h1>
+
+<div class="text-center grid gap-4 ">
+
+    <app-selection 
+        *ngFor="let job of this.JOB_LIST"    
+        (click)="this.selectJob(job)"
+        [active]="this.state.state.job === job">
+        <img class="w-32 mx-auto" src="{{job.imgUrl}}">
+        <h3>{{job.name}}</h3>
+        <h4 class="leading-4 mt-3">€ {{job.salary}},- <br>
+            <span class="text-sm">pro Monat</span></h4>
+    </app-selection>
+
+
+</div>

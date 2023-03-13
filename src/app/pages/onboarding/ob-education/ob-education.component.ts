@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StateService } from 'src/app/state.service';
 
 @Component({
   selector: 'app-ob-education',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ObEducationComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public state: StateService
+  ) { }
 
   ngOnInit(): void {
   }
