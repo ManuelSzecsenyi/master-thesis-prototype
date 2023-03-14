@@ -10,7 +10,7 @@ export const events: IEvent[] = [
                 title: "Answer A",
                 financialImpact: +500,
                 precondition: (state: IState) => { 
-                    return state.insurance == "SPECIAL_INSURANCE" 
+                    return true //state.insurance == "SPECIAL_INSURANCE" 
                 }
             },
             {
@@ -23,7 +23,7 @@ export const events: IEvent[] = [
         canHappen: true,
         noOfOccurences: 0,
         precondition: (state: IState) => { 
-            return state.insurance == "SPECIAL_INSURANCE" 
+            return true //state.insurance == "SPECIAL_INSURANCE" 
         }
     }
 ]

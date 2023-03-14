@@ -8,7 +8,7 @@ import { StateService } from 'src/app/state.service';
 })
 export class OnboardingComponent implements OnInit {
 
-  currentPage = 3;
+  currentPage = 6
 
   constructor(
     private state: StateService,
@@ -21,6 +21,10 @@ export class OnboardingComponent implements OnInit {
   public btnClicked(number: number) {
     this.currentPage += number;
     console.log(this.state.state);
+  }
+
+  canStartGame() { 
+    return false
   }
 
 }

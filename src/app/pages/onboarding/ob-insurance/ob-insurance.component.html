@@ -1,1 +1,32 @@
-<p>ob-insurance works!</p>
+<h1>Beruf</h1>
+
+<div class="text-center grid gap-4 ">
+
+    <app-selection 
+        (click)="this.state.state.insurance.apartment = !this.state.state.insurance.apartment"
+        [active]="this.state.state.insurance.apartment">
+            <img class="w-32 mx-auto" src="https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/furniture-objects/furnitures/book-shelf-slpy57g8k9pmufeluloin.png?_a=AJAMhWI0">
+            <h3>Haushaltsversicherung</h3>
+            <h4 class="leading-4 mt-3">€ 15,- <br>
+            <span class="text-sm">pro Monat</span></h4>
+    </app-selection>
+
+    <app-selection 
+        (click)="this.state.state.insurance.phone = !this.state.state.insurance.phone"
+        [active]="this.state.state.insurance.phone">
+            <img class="w-32 mx-auto" src="https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/mobile-phone/media/front-camera-flash-gwmcvfukl8vpq0rh0w14l.png?_a=AJAMhWI0">
+            <h3>Handyversicherung</h3>
+            <h4 class="leading-4 mt-3">€ 10,- <br>
+            <span class="text-sm">pro Monat</span></h4>
+    </app-selection>
+
+    <app-selection 
+        (click)="this.state.state.insurance.law = !this.state.state.insurance.law"
+        [active]="this.state.state.insurance.law">
+            <img class="w-32 mx-auto" src="https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/legal/legal/gavel-wmskr7z8bz6fnqk63xdqo.png?_a=AJAMhWI0">
+            <h3>Rechtsschutz</h3>
+            <h4 class="leading-4 mt-3">€ 15,- <br>
+            <span class="text-sm">pro Monat</span></h4>
+    </app-selection>
+
+</div>

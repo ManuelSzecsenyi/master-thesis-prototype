@@ -13,8 +13,16 @@ export class StateService {
   public createNewGame() {
     this.state = {
       name: '',
-      insurance: '',
-      mobility: '',
+      insurance: {
+        apartment: false,
+        phone: false,
+        law: false
+      },
+      mobility: {
+        car: false,
+        bike: false,
+        publicTransport: false
+      },
       lifepoints: 100,
       money: 1000,
       university: false

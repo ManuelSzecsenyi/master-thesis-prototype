@@ -1,1 +1,32 @@
-<p>ob-mobility works!</p>
+<h1>Beruf</h1>
+
+<div class="text-center grid gap-4 ">
+
+    <app-selection 
+        (click)="this.state.state.mobility.car= !this.state.state.mobility.car"
+        [active]="this.state.state.mobility.car">
+            <img class="w-32 mx-auto" src="https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/transportation-by-road/cars/car-1-pd3fefd7ih90vjk6zzash.png?_a=AJAMhWI0">
+            <h3>Auto</h3>
+            <h4 class="leading-4 mt-3">€ 300,- <br>
+            <span class="text-sm">pro Monat</span></h4>
+    </app-selection>
+
+    <app-selection 
+        (click)="this.state.state.mobility.bike= !this.state.state.mobility.bike"
+        [active]="this.state.state.mobility.bike">
+            <img class="w-32 mx-auto" src="https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/transportation-by-road/bike/bike-parking-yscbc92k88vgjm4xtdxrm.png?_a=AJAMhWI0">
+            <h3>Fahrrad</h3>
+            <h4 class="leading-4 mt-3">€ 10,- <br>
+            <span class="text-sm">pro Monat</span></h4>
+    </app-selection>
+
+    <app-selection 
+        (click)="this.state.state.mobility.publicTransport= !this.state.state.mobility.publicTransport"
+        [active]="this.state.state.mobility.publicTransport">
+            <img class="w-32 mx-auto" src="https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/transportation-by-road/bus/bus-transit-ticket-m7dqy7ci2rt1j9gefr90qj.png?_a=AJAMhWI0">
+            <h3>Öffis</h3>
+            <h4 class="leading-4 mt-3">€ 31,- <br>
+            <span class="text-sm">pro Monat</span></h4>
+    </app-selection>
+
+</div>
