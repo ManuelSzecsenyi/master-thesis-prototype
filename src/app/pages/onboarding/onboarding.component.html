@@ -13,7 +13,7 @@
 </ng-container>
 
 
-<app-button *ngIf="!this.canStartGame()" text="Weiter" (click)="btnClicked(1)"></app-button>
-<app-button *ngIf="this.canStartGame()" text="Spiel starten"></app-button>
+<app-button *ngIf="this.currentPage < 6" text="Weiter" (click)="btnClicked(1)"></app-button>
+<app-button *ngIf="this.currentPage === 6" (click)="this.startGame()" text="Spiel starten"></app-button>
 
 <app-button *ngIf="this.currentPage > 0" text="Zurück" (click)="btnClicked(-1)" [isPrimary]="false"></app-button>
