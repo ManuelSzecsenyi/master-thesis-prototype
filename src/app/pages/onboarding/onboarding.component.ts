@@ -9,7 +9,7 @@ import { StateService } from 'src/app/state.service';
 })
 export class OnboardingComponent implements OnInit {
 
-  currentPage = 6
+  currentPage = 0
 
   constructor(
     private state: StateService,

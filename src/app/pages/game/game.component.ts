@@ -18,6 +18,7 @@ export class GameComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.stateService.createNewGame(true);
     this.getNewEvent();    
   }
 
@@ -27,13 +28,14 @@ export class GameComponent implements OnInit {
   
 
   decide(option: IOption) {
-    this.eventService.makeDecision(option);
+    if(this.currentEvent === undefined) return;
+    this.stateService.makeDecision(this.currentEvent, option);
     this.getNewEvent();
   }
 
   getNewEvent() {
     
-    const newEvent = this.eventService.getEvent()
+    const newEvent = this.eventService.getRandomEvent()
 
     if(newEvent.canHappen) {
       this.currentEvent = newEvent

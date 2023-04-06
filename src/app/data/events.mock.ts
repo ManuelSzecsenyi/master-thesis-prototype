@@ -3,22 +3,18 @@ import { IState } from "../models/state.model";
 
 export const events: IEvent[] = [
     {
-        title: "Lorem ipsum this is a question",
-        description: "This is a description",
-        options: [
-            {
-                title: "Answer A",
-                financialImpact: +500,
-                precondition: (state: IState) => { 
-                    return true //state.insurance == "SPECIAL_INSURANCE" 
-                }
+        title: "StartUp",
+        description: "Dein Freund möchte sich gerne € 2.000,- für die Gründung seines StartUps ausborgen. Er verspricht dir, dass er dir das Geld in 2 Jahren zurückzahlt plus 10% Zinsen.",
+        options: {
+            accept: {
+                financialImpact: -2000,
+                lifeImpact: 2,
             },
-            {
-                title: "Answer B",
-                financialImpact: -1500,
-                precondition: undefined // no precondition for this test
+            decline: {
+                financialImpact: 0,
+                lifeImpact: -1,
             }
-        ],
+        },
         probability: 4,
         canHappen: true,
         noOfOccurences: 0,

@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { IState } from './models/state.model';
+import { IEvent, IOption } from './models/event.model';
+import { GAME_CONFIG, IGameConfig } from './models/config.model';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +10,28 @@ export class StateService {
 
   state!: IState;
 
+  gameConfig: IGameConfig = GAME_CONFIG
+
+  /**
+   * Empty list of events. 
+   * Will be filled to track the players decisions throughout the game
+   */
+  decisionHistory: IEvent[] = [];
+
   constructor() { }
+
+  public makeDecision(event: IEvent, decision: IOption) {
+    
+    // Update the money
+    this.state.money += decision.financialImpact
+
+    // Update the life points
+    this.state.lifepoints += decision.lifeImpact;
+
+    // Update the event list
+    event.decision = decision;
+    this.decisionHistory.push(event);
+  }
 
   public createNewGame(demo?: boolean) {
 

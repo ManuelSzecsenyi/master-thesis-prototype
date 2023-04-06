@@ -1,15 +1,20 @@
 export interface IEvent {
     title: string;
     description: string;
-    options: IOption[];
+    options: {
+        accept: IOption,
+        decline: IOption,
+    };
     probability: number;
     canHappen: boolean;
     noOfOccurences: number;
     precondition?: any;
+    decision?: IOption;
 }
 
 export interface IOption {
-    title: string;
+    title?: string;
     financialImpact: number;
-    precondition: any;
+    lifeImpact: number;
+    precondition?: any;
 }
