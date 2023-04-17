@@ -1,0 +1,107 @@
+[
+    {
+        "title": "Pullover",
+        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
+        "options": {
+            "accept": {
+                "financialImpact": -50,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Pullover",
+        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
+        "options": {
+            "accept": {
+                "financialImpact": -50,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Pullover",
+        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
+        "options": {
+            "accept": {
+                "financialImpact": -50,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Wasserschaden",
+        "description": "Du hast einen Wasserschaden und der Parkettboden muss ausgetauscht werden. Die Kosten belaufen sich auf € 2.000,-. Falls du eine Versicherung hast, übernimmt diese die Kosten.",
+        "options": {
+            "accept": {
+                "financialImpact": -2000,
+                "lifeImpact": -10
+            },
+            "decline": {
+                "financialImpact": -2000,
+                "lifeImpact": -10
+            }
+        },
+        "insurance": "APARTMENT"
+    },
+    {
+        "title": "Screen kaputt",
+        "description": "Oh nein! Dein Handy ist dir runtergefallen und der Bildschirm muss ausgetauscht werden. Die Kosten belaufen sich auf € 120,-. Falls du eine Versicherung hast, übernimmt diese die Kosten.",
+        "options": {
+            "accept": {
+                "financialImpact": -120,
+                "lifeImpact": -1
+            },
+            "decline": {
+                "financialImpact": -120,
+                "lifeImpact": -1
+            }
+        },
+        "insurance": "PHONE"
+    },
+    {
+        "title": "Nachbarschaftsstreit",
+        "description": "Deine Vermieterin und du haben ein paar Ungereimtheiten und schleppt den Streit vor Gericht. Die Kosten belaufen sich auf € 3.000,-. Falls du eine Versicherung hast, übernimmt diese die Kosten.",
+        "options": {
+            "accept": {
+                "financialImpact": -3000,
+                "lifeImpact": -10
+            },
+            "decline": {
+                "financialImpact": -3000,
+                "lifeImpact": -10
+            }
+        },
+        "insurance": "LAW"
+    },
+    {
+        "title": "StartUp",
+        "description": "Dein Freund möchte sich gerne € 2.000,- für die Gründung seines StartUps ausborgen. Er verspricht dir, dass er dir das Geld in 2 Jahren zurückzahlt plus 10% Zinsen.",
+        "options": {
+            "accept": {
+                "financialImpact": -2000,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -1
+            }
+        },
+        "insurance": null
+    }
+]

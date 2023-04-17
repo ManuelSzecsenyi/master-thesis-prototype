@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { IState } from './models/state.model';
 import { IEvent, IOption } from './models/event.model';
 import { GAME_CONFIG, IGameConfig } from './models/config.model';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +19,9 @@ export class StateService {
    */
   decisionHistory: IEvent[] = [];
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   public makeDecision(event: IEvent, decision: IOption) {
 
@@ -32,17 +35,26 @@ export class StateService {
     this.state.lifepoints += decision.lifeImpact;
     console.log("Player received life points: " + decision.lifeImpact)
 
-    // Life points shall max out at 100
+    // Life points shall be maxed out at 100
     if (this.state.lifepoints > 100) this.state.lifepoints = 100;
 
     // Update the event list
     event.decision = decision;
     this.decisionHistory.push(event);
 
-    // Handle money changes every 5 rounds
+    // Handle money & lifepoints changes every 5 rounds
     if (this.state.round % 5 === 0) {
-      console.log("Player received salary: " + this.state.job?.salary);
-      this.state.money += this.state.job?.salary ?? 0;
+      console.log("Player received budget after salary: " + this.getMonthlyBudget());
+      this.state.money += this.getMonthlyBudget()
+      
+      console.log("Player received monthly life points: " + this.getMonthlyLifePoints());
+      this.state.lifepoints += this.getMonthlyLifePoints();
+    }
+
+    // Handle investments every 15 rounds
+    if (this.state.round % 15 === 0) {
+      console.log("Investment round");
+      this.router.navigate(['/investments']);
     }
   }
 
@@ -100,6 +112,10 @@ export class StateService {
 
   getMonthlyBudget() {
     return (this.state.job?.salary ?? 0)  - (this.state.apartment?.rent ?? 0) - this.getInsurancePrice() - this.getMobilityPrice() - 380;
+  }
+
+  getMonthlyLifePoints() {
+    return 20 - (this.state.job?.stress ?? 0) - (this.state.apartment?._internalDistanceFactor ?? 0);
   }
 
   

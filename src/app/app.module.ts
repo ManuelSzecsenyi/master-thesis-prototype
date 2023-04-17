@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { SelectionComponent } from './components/selection/selection.component';
 import { ObJobComponent } from './pages/onboarding/ob-job/ob-job.component';
 import { InvestComponent } from './pages/invest/invest.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { InvestComponent } from './pages/invest/invest.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HammerModule
+    HammerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
