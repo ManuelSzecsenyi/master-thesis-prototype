@@ -10,7 +10,7 @@ import { StateService } from 'src/app/state.service';
 })
 export class GameComponent implements OnInit {
 
-  currentEvent?: IEvent;
+  currentEvent!: IEvent;
 
   constructor(
     public stateService: StateService,
@@ -22,28 +22,32 @@ export class GameComponent implements OnInit {
     this.getNewEvent();    
   }
 
-  onSwipeUp(event: any) {
-    console.log("up", event);
-  }
-  
-
-  decide(option: IOption) {
-    if(this.currentEvent === undefined) return;
-    this.stateService.makeDecision(this.currentEvent, option);
-    this.getNewEvent();
-  }
 
   getNewEvent() {
+    this.currentEvent = this.eventService.getNextEvent();
     
-    const newEvent = this.eventService.getRandomEvent()
-
-    if(newEvent.canHappen) {
-      this.currentEvent = newEvent
-    } else {
-      console.log("Skipping event");
-      this.getNewEvent();
+    if(this.currentEvent == null) {
+      console.log("No more events"); // TODO: End game
     }
+  }
+
+  moreInfoClicked() {
+    console.log("More info clicked");
+    window.alert(this.currentEvent.moreInfo ? this.currentEvent.moreInfo : "Keine zusätzliche Information verfügbar.");
+  }
+
+  decisionMade(decision: boolean) {
+
+    // Make the decision
+    this.stateService.makeDecision(this.currentEvent, decision ? this.currentEvent.options.accept : this.currentEvent.options.decline);
     
+    // Get a new event
+    this.getNewEvent()
+  }
+
+  getMonth(): number {
+    // 12 rounds per year
+    return Math.floor(this.stateService.state.round / 12)
   }
 
 }

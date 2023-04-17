@@ -21,16 +21,29 @@ export class StateService {
   constructor() { }
 
   public makeDecision(event: IEvent, decision: IOption) {
+
+    console.log("--------------------");
     
     // Update the money
     this.state.money += decision.financialImpact
+    console.log("Player received money: " + decision.financialImpact)
 
     // Update the life points
     this.state.lifepoints += decision.lifeImpact;
+    console.log("Player received life points: " + decision.lifeImpact)
+
+    // Life points shall max out at 100
+    if (this.state.lifepoints > 100) this.state.lifepoints = 100;
 
     // Update the event list
     event.decision = decision;
     this.decisionHistory.push(event);
+
+    // Handle money changes every 5 rounds
+    if (this.state.round % 5 === 0) {
+      console.log("Player received salary: " + this.state.job?.salary);
+      this.state.money += this.state.job?.salary ?? 0;
+    }
   }
 
   public createNewGame(demo?: boolean) {
@@ -54,7 +67,8 @@ export class StateService {
       },
       lifepoints: 100,
       money: 1000,
-      university: false
+      university: false,
+      round: 0,
     }
   }
 
@@ -122,5 +136,6 @@ export const DEMO_STATE: IState = {
         _internalDistanceFactor: 10,
         rent: 300,
         imgUrl: "https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/real-estate-construction/houses/house-4-le4cusoc1c7tee903j8ew.png?_a=AJAMhWI0"
-    }
+    },
+    round: 0
 }

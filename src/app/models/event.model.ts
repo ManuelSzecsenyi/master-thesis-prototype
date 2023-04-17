@@ -5,11 +5,9 @@ export interface IEvent {
         accept: IOption,
         decline: IOption,
     };
-    probability: number;
-    canHappen: boolean;
-    noOfOccurences: number;
     precondition?: any;
     decision?: IOption;
+    moreInfo?: string;
 }
 
 export interface IOption {

@@ -19,4 +19,5 @@ export interface IState {
     };
     lifepoints: number;
     money: number;
+    round: number;
 }
