@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class StateService {
 
-  state!: IState;
+  state: IState = DEMO_STATE;
 
   gameConfig: IGameConfig = GAME_CONFIG
 
@@ -153,5 +153,5 @@ export const DEMO_STATE: IState = {
         rent: 300,
         imgUrl: "https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/real-estate-construction/houses/house-4-le4cusoc1c7tee903j8ew.png?_a=AJAMhWI0"
     },
-    round: 0
+    round: 14
 }

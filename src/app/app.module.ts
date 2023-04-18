@@ -19,6 +19,7 @@ import { SelectionComponent } from './components/selection/selection.component';
 import { ObJobComponent } from './pages/onboarding/ob-job/ob-job.component';
 import { InvestComponent } from './pages/invest/invest.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FormsModule,
     HammerModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
