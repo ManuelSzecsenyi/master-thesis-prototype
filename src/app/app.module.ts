@@ -20,6 +20,7 @@ import { ObJobComponent } from './pages/onboarding/ob-job/ob-job.component';
 import { InvestComponent } from './pages/invest/invest.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
+import { SummaryComponent } from './pages/summary/summary.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { NgxSliderModule } from '@angular-slider/ngx-slider';
     OnboardingComponent,
     SelectionComponent,
     ObJobComponent,
-    InvestComponent
+    InvestComponent,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,

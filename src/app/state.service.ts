@@ -3,6 +3,7 @@ import { IState } from './models/state.model';
 import { IEvent, IOption } from './models/event.model';
 import { GAME_CONFIG, IGameConfig } from './models/config.model';
 import { Router } from '@angular/router';
+import { QuestionService } from './services/question.service';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +21,7 @@ export class StateService {
   decisionHistory: IEvent[] = [];
 
   constructor(
-    private router: Router
+    private router: Router,
   ) { }
 
   public makeDecision(event: IEvent, decision: IOption) {
@@ -153,5 +154,5 @@ export const DEMO_STATE: IState = {
         rent: 300,
         imgUrl: "https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/real-estate-construction/houses/house-4-le4cusoc1c7tee903j8ew.png?_a=AJAMhWI0"
     },
-    round: 14
+    round: 0
 }
