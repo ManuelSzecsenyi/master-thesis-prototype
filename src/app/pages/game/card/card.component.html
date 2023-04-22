@@ -1,8 +1,8 @@
 <div class="bg-white w-100 border-rad rounded-xl shadow-md py-12 px-4 flex justify-center flex-col border-1 border-gray-300 mb-2" style="min-height:70vh;">
 
-    <div class="block mx-auto max-w-lg text-center">
-        <img class="w-1/2 mx-auto mb-3" src="https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/office/document-sign-1-itmazvd7ymgvdriz5hbvcd.png/document-sign-1-0gdq0jfq3kwto352tg2zoqh.png?_a=AJAMhWI0" />
-        <h2 class="font-medium text-5xl mb-4">{{this.currentEvent?.title}}</h2>
+    <div class="block mx-auto w-lg max-w-full text-center">
+        <img class="w-1/2 mx-auto mb-3" src="assets/{{this.currentEvent?.image ? this.currentEvent?.image : 'business-direction.png'}}" />
+        <h2 class="font-medium text-5xl mb-4 break-words">{{this.currentEvent?.title}}</h2>
         <div class="text-xl">{{this.currentEvent?.description}}</div>
     </div>
 </div>

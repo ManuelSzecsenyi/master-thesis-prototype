@@ -1,6 +1,7 @@
 [
     {
         "title": "Pullover",
+        "image": "hoodie.png",
         "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
         "options": {
             "accept": {
@@ -15,23 +16,42 @@
         "insurance": null
     },
     {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
+        "title": "Waschmaschine kaputt",
+        "image": "washing-machine.png",
+        "description": "Oh nein! Deine Waschmaschine ist kaputt. Du musst dir eine neue kaufen. Die kostet € 500,-.",
         "options": {
             "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
+                "financialImpact": -500,
+                "lifeImpact": 5
             },
             "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
+                "financialImpact": -500,
+                "lifeImpact": 5
             }
         },
         "insurance": null
     },
     {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
+        "title": "Kryptowährungen",
+        "image": "crypto-rocket.png",
+        "description": "Deine Freundin erzählt dir von neuen Tokens die durch die Decke gehen sollen! Magst du 200€ investieren?",
+        "options": {
+            "accept": {
+                "financialImpact": -200,
+                "lifeImpact": 1
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "moreInfo": "Die meisten Kryptowährungen sind sehr volatil und können schnell an Wert verlieren. Investiere nur Geld, dass du nicht brauchst.",
+        "insurance": null
+    },
+    {
+        "title": "Party",
+        "image": "cheer-party-4.png",
+        "description": "Deine Freunde möchten am Wochenende in eine Bar gehen. Du musst dafür 50€ beiseite legen. Möchtest du mitgehen?",
         "options": {
             "accept": {
                 "financialImpact": -50,
@@ -39,688 +59,46 @@
             },
             "decline": {
                 "financialImpact": 0,
-                "lifeImpact": 0
+                "lifeImpact": -2
             }
         },
         "insurance": null
     },
     {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
+        "title": "Urlaub",
+        "image": "beach-trip-1.png",
+        "description": "Du möchtest gerne mit deinen Freunden in den Urlaub fahren. Die Kosten belaufen sich auf € 1.000,-. Möchtest du mitfahren?",
         "options": {
             "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
+                "financialImpact": -1000,
+                "lifeImpact": 5
             },
             "decline": {
                 "financialImpact": 0,
-                "lifeImpact": 0
+                "lifeImpact": -5
             }
         },
         "insurance": null
     },
     {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
+        "title": "Medikamente",
+        "image": "medicine-bottle-5 color.png",
+        "description": "Du wurdest krank und musst Medikamente kaufen. Die Kosten belaufen sich auf € 20,-. Möchtest du die Medikamente kaufen?",
         "options": {
             "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
+                "financialImpact": -20,
+                "lifeImpact": 1
             },
             "decline": {
                 "financialImpact": 0,
-                "lifeImpact": 0
+                "lifeImpact": -10
             }
         },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
-    },
-    {
-        "title": "Pullover",
-        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
-        "options": {
-            "accept": {
-                "financialImpact": -50,
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": 0
-            }
-        },
-        "insurance": null
+        "insurance": "HEALTH"
     },
     {
         "title": "Wasserschaden",
+        "image": "water-drop.png",  
         "description": "Du hast einen Wasserschaden und der Parkettboden muss ausgetauscht werden. Die Kosten belaufen sich auf € 2.000,-. Falls du eine Versicherung hast, übernimmt diese die Kosten.",
         "options": {
             "accept": {
@@ -736,6 +114,7 @@
     },
     {
         "title": "Screen kaputt",
+        "image": "broken-phone-1.png",
         "description": "Oh nein! Dein Handy ist dir runtergefallen und der Bildschirm muss ausgetauscht werden. Die Kosten belaufen sich auf € 120,-. Falls du eine Versicherung hast, übernimmt diese die Kosten.",
         "options": {
             "accept": {
@@ -751,6 +130,7 @@
     },
     {
         "title": "Nachbarschaftsstreit",
+        "image": "courthouse-2.png",
         "description": "Deine Vermieterin und du haben ein paar Ungereimtheiten und schleppt den Streit vor Gericht. Die Kosten belaufen sich auf € 3.000,-. Falls du eine Versicherung hast, übernimmt diese die Kosten.",
         "options": {
             "accept": {
@@ -766,6 +146,7 @@
     },
     {
         "title": "StartUp",
+        "image": "startup-benefit.png",
         "description": "Dein Freund möchte sich gerne € 2.000,- für die Gründung seines StartUps ausborgen. Er verspricht dir, dass er dir das Geld in 2 Jahren zurückzahlt plus 10% Zinsen.",
         "options": {
             "accept": {
@@ -779,5 +160,70 @@
         },
         "insurance": null,
         "moreInfo": "Die meisten StartUps scheitern. Wenn dein Freund das Geld nicht zurückzahlen kann, kannst du es ihm nicht mehr zurückfordern."
-    }
+    },
+    {
+        "title": "Staubsauger",
+        "image": "happy-vacuum-cleaner.png",
+        "description": "Dein Staubsauger ist kautt gegangen. Möchtest du dir einen neuen kaufen oder lieber mit deinem Besen kehren? Der neue Staubsauger kostet € 150,-.",
+        "options": {
+            "accept": {
+                "financialImpact": -150,
+                "lifeImpact": 0
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -5
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Feuerschaden",
+        "image": "fire-detector.png",
+        "description": "Oh nein! Du hast vergessen den Herd auszuschalten und deine Küche ist in Flammen aufgegangen. Die Kosten belaufen sich auf € 5.000,-. Falls du eine Versicherung hast, übernimmt diese die Kosten.",
+        "options": {
+            "accept": {
+                "financialImpact": -5000,
+                "lifeImpact": -10
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -10
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Kinoabend",
+        "image": "cinema-theater-movie.png",
+        "description": "Der neuste Blockbuster ist im Kino gestartet. Du möchtest gerne mit deinen Freunden ins Kino gehen. Die Kosten belaufen sich auf € 20,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Thermentag",
+        "image": "spa-towel.png",
+        "description": "Du möchtest gerne mit deinen Freunden in den Thermen gehen. Die Kosten belaufen sich auf € 60,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -60,
+                "lifeImpact": 7
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -1
+            }
+        },
+        "insurance": null
+    },
+    
 ]

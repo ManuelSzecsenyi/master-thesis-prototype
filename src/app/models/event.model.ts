@@ -1,4 +1,5 @@
 export interface IEvent {
+    image?: string;
     title: string;
     description: string;
     options: {

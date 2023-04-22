@@ -44,7 +44,7 @@ export const JOB_LIST: IJob[] = [
     salary: 1820,
     stress: 5,
     universityNeded: false,
-    imgUrl: 'https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/drinks/coffee/coffee-shop-cashier-2-1-pp04tp5cb4pjkph623cnqo.png?_a=AJAMhWI0'
+    imgUrl: 'coffee-shop-cashier-2-1.png'
   },
   {
     name: "Jurist:in",
@@ -52,7 +52,7 @@ export const JOB_LIST: IJob[] = [
     salary: 3850,
     stress: 10,
     universityNeded: true,
-    imgUrl: 'https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/education/learning/law-book-u1ehzcvhz9qzadv9qstmt.png?_a=AJAMhWI0'
+    imgUrl: 'law-book.png'
   },
   {
     name: "Bäcker:in",
@@ -60,7 +60,7 @@ export const JOB_LIST: IJob[] = [
     salary: 2290,
     stress: 9,
     universityNeded: false,
-    imgUrl: 'https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/food/baking/pastry-chef-2-qtjmywudkopxh7zyamjwm.png?_a=AJAMhWI0'
+    imgUrl: 'pastry-chef-2.png'
   }, 
   {
     name: "Apotheker:in",
@@ -68,6 +68,6 @@ export const JOB_LIST: IJob[] = [
     salary: 3820,
     stress: 5,
     universityNeded: true,
-    imgUrl: 'https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/health/medication/medicine-bottle-5-nhwq2vp9iuoijbnx86otzr.png?_a=AJAMhWI0'
+    imgUrl: 'medicine-bottle-5.png'
   }
 ] 

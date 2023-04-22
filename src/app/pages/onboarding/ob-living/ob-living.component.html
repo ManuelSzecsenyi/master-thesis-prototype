@@ -6,7 +6,7 @@
         *ngFor="let apartment of this.LIVING_LIST"    
         (click)="this.state.state.apartment = apartment"
         [active]="this.state.state.apartment === apartment">
-            <img class="w-32 mx-auto" src="{{apartment.imgUrl}}">
+            <img class="w-32 mx-auto" src="assets/{{apartment.imgUrl}}">
             <h3>{{apartment.name}}</h3>
             
             <div class="flex justify-between">
