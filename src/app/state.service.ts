@@ -32,14 +32,24 @@ export class StateService {
   public makeDecision(event: IEvent, decision: IOption) {
 
     console.log("--------------------");
-    
-    // Update the money
-    this.state.money += decision.financialImpact
-    console.log("Player received money: " + decision.financialImpact)
 
-    // Update the life points
-    this.state.lifepoints += decision.lifeImpact;
-    console.log("Player received life points: " + decision.lifeImpact)
+    // Check if the event has a insurance precondition
+    if(event.insurance) {
+      // Check if the precondition is met
+      if(event.insurance == 'APARTMENT' && this.state.insurance.apartment) {
+        // No impact 
+      } else if(event.insurance == 'PHONE' && this.state.insurance.phone) {
+        // No impact
+      } else if(event.insurance == 'LAW' && this.state.insurance.law) {
+        // No impact
+      } else {
+        // No insurance, handle impact
+        this.handleDecisionImpact(decision);
+      }
+
+    } else {
+      this.handleDecisionImpact(decision);
+    }
 
     // Update the event list
     event.decision = decision;
@@ -113,12 +123,23 @@ export class StateService {
   }
 
   getMonthlyLifePoints() {
-    return 20 - (this.state.job?.stress ?? 0) - (this.state.apartment?._internalDistanceFactor ?? 0);
+    return (this.state.job?.stress ?? 0) - (this.state.apartment?._internalDistanceFactor ?? 0);
   }
 
   private capLifePoints() {
     if (this.state.lifepoints > 100) this.state.lifepoints = 100;
   }
+
+  private handleDecisionImpact(decision: IOption) {
+
+    // Update the money
+    this.state.money += decision.financialImpact
+    console.log("Player money impact: " + decision.financialImpact)
+
+    // Update the life points
+    this.state.lifepoints += decision.lifeImpact;
+    console.log("Player life points impact: " + decision.lifeImpact)
+  }     
 
   /**
    * Game over is when 

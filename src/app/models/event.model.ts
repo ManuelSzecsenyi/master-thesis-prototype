@@ -6,7 +6,7 @@ export interface IEvent {
         accept: IOption,
         decline: IOption,
     };
-    precondition?: any;
+    insurance?: string;
     decision?: IOption;
     moreInfo?: string;
 }

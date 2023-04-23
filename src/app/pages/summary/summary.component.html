@@ -28,7 +28,7 @@
     
     <div class="flex items-center gap-2 mb-5" *ngFor="let event of this.stateService.decisionHistory; index as i">
         
-        <img class="w-44 max-w-full" src="https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/office/document-sign-1-itmazvd7ymgvdriz5hbvcd.png/document-sign-1-0gdq0jfq3kwto352tg2zoqh.png?_a=AJAMhWI0" />
+        <img class="w-44 max-w-full" src="assets/{{this.event.image}}" />
         <div>
             <small>Runde {{i+1}}</small>
             <h3 class="font-medium text-3xl mb-2">{{this.event?.title}}</h3>

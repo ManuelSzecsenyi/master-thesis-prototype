@@ -22,31 +22,31 @@ export class ObLivingComponent implements OnInit {
 
 export const LIVING_LIST: ILiving[] = [
   {
-    name: "Wohnwagen",
+    name: "WG-Zimmer",
     distance: 50,
     _internalDistanceFactor: 10,
-    rent: 400,
+    rent: 500,
     imgUrl: 'house-4.png'
   },
   {
     name: "City Apartment",
     distance: 5,
     _internalDistanceFactor: 1,
-    rent: 1000,
+    rent: 1200,
     imgUrl: 'apartment.png'
   },
   {
     name: "Vorstadthaus",
     distance: 15,
     _internalDistanceFactor: 3,
-    rent: 1550,
+    rent: 1850,
     imgUrl: 'house-15.png'
   },
   {
     name: "Kleines Apartment",
     distance: 10,
     _internalDistanceFactor: 8,
-    rent: 650,
+    rent: 850,
     imgUrl: 'book-shelf.png'
   }
 ]

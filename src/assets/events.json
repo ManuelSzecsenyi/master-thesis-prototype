@@ -94,7 +94,7 @@
                 "lifeImpact": -10
             }
         },
-        "insurance": "HEALTH"
+        "insurance": ""
     },
     {
         "title": "Wasserschaden",
@@ -221,6 +221,38 @@
             "decline": {
                 "financialImpact": 0,
                 "lifeImpact": -1
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Restaurantbesuch",
+        "image": "sushi-restaurant-3.png",
+        "description": "Du bis super erschöpft und möchtest gerne mit deinen Freunden in ein gutes Restaurant gehen. Die Kosten belaufen sich auf € 60,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -60,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Essen bestellen",
+        "image": "room-service-1-1.png",
+        "description": "Du bis super erschöpft und möchtest lieber dein Lieblingsessen bestellen. Die Kosten belaufen sich auf € 20,-. Möchtest du bestellen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
             }
         },
         "insurance": null

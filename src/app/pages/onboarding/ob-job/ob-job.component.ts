@@ -36,20 +36,20 @@ export class ObJobComponent implements OnInit {
 
 }
 
-// Sources: https://www.jobted.at/gehalt
+
 export const JOB_LIST: IJob[] = [
   {
     name: "Einzelhandel",
     description: "Du verkaufst Waren im Einzelhandel",
-    salary: 1820,
-    stress: 5,
+    salary: 1520,
+    stress: 6,
     universityNeded: false,
     imgUrl: 'coffee-shop-cashier-2-1.png'
   },
   {
     name: "Jurist:in",
     description: "Du verteidigst Menschen vor Gericht",
-    salary: 3850,
+    salary: 2550,
     stress: 10,
     universityNeded: true,
     imgUrl: 'law-book.png'
@@ -57,16 +57,16 @@ export const JOB_LIST: IJob[] = [
   {
     name: "Bäcker:in",
     description: "Du stehst früh auf und backst Brot und Kuchen",
-    salary: 2290,
-    stress: 9,
+    salary: 1800,
+    stress: 7,
     universityNeded: false,
     imgUrl: 'pastry-chef-2.png'
   }, 
   {
     name: "Apotheker:in",
     description: "Du verkaufst Medikamente",
-    salary: 3820,
-    stress: 5,
+    salary: 2300,
+    stress: 4,
     universityNeded: true,
     imgUrl: 'medicine-bottle-5.png'
   }
