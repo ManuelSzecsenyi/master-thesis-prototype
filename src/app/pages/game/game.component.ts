@@ -18,7 +18,6 @@ export class GameComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.stateService.createNewGame(true);
 
     // Retry until we have an event
     window.setTimeout(() => {

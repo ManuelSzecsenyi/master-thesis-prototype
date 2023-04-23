@@ -17,7 +17,7 @@ export class OnboardingComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.state.createNewGame(true);
+    this.state.reset();
   }
 
   public btnClicked(number: number) {
@@ -41,10 +41,16 @@ export class OnboardingComponent implements OnInit {
   }
 
   startGame() {
-    console.log(this.canStartGame());
-
     if( !this.canStartGame() ) return;
 
+    // Choose starting budget
+    if(this.state.state.university) {
+      this.state.state.money = 1000;
+    } else {
+      this.state.state.money = 5000;
+    }
+
+    console.log("Starting game");
     this.router.navigate(['/game']);
   }
 

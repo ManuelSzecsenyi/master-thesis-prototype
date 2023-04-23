@@ -24,6 +24,11 @@ export class StateService {
     private router: Router,
   ) { }
 
+  public reset() {
+    this.state = NEW_GAME_STATE;
+    this.decisionHistory = [];
+  }
+
   public makeDecision(event: IEvent, decision: IOption) {
 
     console.log("--------------------");
@@ -142,10 +147,10 @@ export class StateService {
 }
 
 
-export const DEMO_STATE: IState = {
-    name: "Manuel",
+export const NEW_GAME_STATE: IState = {
+    name: "",
     insurance: {
-        apartment: true,
+        apartment: false,
         phone: false,
         law: false
     },
@@ -155,23 +160,44 @@ export const DEMO_STATE: IState = {
         publicTransport: false
     },
     lifepoints: 100,
-    money: 1000,
+    money: 0,
     university: false,
-    avatar: "https://api.dicebear.com/5.x/adventurer/svg?seed=Garfield",
-    job: {
-        name: "Einzelhandel",
-        description: "Du verkaufst Waren im Einzelhandel",
-        salary: 1820,
-        stress: 5,
-        universityNeded: false,
-        imgUrl: "https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/drinks/coffee/coffee-shop-cashier-2-1-pp04tp5cb4pjkph623cnqo.png?_a=AJAMhWI0"
-    },
-    apartment: {
-        name: "Wohnwagen",
-        distance: 50,
-        _internalDistanceFactor: 10,
-        rent: 300,
-        imgUrl: "https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/real-estate-construction/houses/house-4-le4cusoc1c7tee903j8ew.png?_a=AJAMhWI0"
-    },
+    avatar: "",
+    job: undefined,
+    apartment: undefined,
     round: 0
+}
+
+export const DEMO_STATE: IState = {
+  name: "Manuel",
+  insurance: {
+      apartment: true,
+      phone: false,
+      law: false
+  },
+  mobility: {
+      car: false,
+      bike: false,
+      publicTransport: false
+  },
+  lifepoints: 100,
+  money: 1000,
+  university: false,
+  avatar: "https://api.dicebear.com/5.x/adventurer/svg?seed=Garfield",
+  job: {
+      name: "Einzelhandel",
+      description: "Du verkaufst Waren im Einzelhandel",
+      salary: 1820,
+      stress: 5,
+      universityNeded: false,
+      imgUrl: "https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/drinks/coffee/coffee-shop-cashier-2-1-pp04tp5cb4pjkph623cnqo.png?_a=AJAMhWI0"
+  },
+  apartment: {
+      name: "Wohnwagen",
+      distance: 50,
+      _internalDistanceFactor: 10,
+      rent: 300,
+      imgUrl: "https://assets.streamlinehq.com/image/private/w_400,h_400,ar_1/f_auto/l_watermark_mnkze9/o_30/c_scale,w_181/fl_layer_apply,x_0,y_133/v1/icons/illustrations-duotone/real-estate-construction/houses/house-4-le4cusoc1c7tee903j8ew.png?_a=AJAMhWI0"
+  },
+  round: 0
 }
