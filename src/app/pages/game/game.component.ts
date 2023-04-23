@@ -23,6 +23,12 @@ export class GameComponent implements OnInit {
     window.setTimeout(() => {
       this.getNewEvent()    
     }, 100);
+
+    // Prevent accidental page reload when the game is running
+    window.addEventListener('beforeunload', (event) => {
+      event.preventDefault();
+      event.returnValue = '';
+    });
     
   }
 

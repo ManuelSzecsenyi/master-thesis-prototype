@@ -68,30 +68,18 @@ export class StateService {
 
   }
 
-  public createNewGame(demo?: boolean) {
+  startGame() {
+    if( !this.canStartGame() ) return;
 
-    if (demo) { 
-      this.state = DEMO_STATE;
-      return;
+    // Choose starting budget
+    if(this.state.university) {
+      this.state.money = 1000;
+    } else {
+      this.state.money = 5000;
     }
 
-    this.state = {
-      name: '',
-      insurance: {
-        apartment: false,
-        phone: false,
-        law: false
-      },
-      mobility: {
-        car: false,
-        bike: false,
-        publicTransport: false
-      },
-      lifepoints: 100,
-      money: 1000,
-      university: false,
-      round: 0,
-    }
+    console.log("Starting game");
+    this.router.navigate(['/game']);
   }
 
   /**
@@ -141,6 +129,21 @@ export class StateService {
     if(this.state.lifepoints < 50 || this.state.money < 0) {
       this.router.navigate(['/game-over']);
     }
+  }
+
+  private canStartGame() { 
+
+    if( this.state.name === '' ) alert('Du musst einen Namen eingeben');
+    if( this.state.job === undefined ) alert('Du musst einen Job auswählen');
+    if( this.state.apartment === undefined ) alert('Du musst eine Wohnung auswählen');
+    if( this.getMonthlyBudget() <= 0 ) alert('Dein Budget ist nicht positiv. Du musst mehr verdienen oder weniger ausgeben. (Wohnung, Versicherung, Mobilität');
+
+    return (
+      this.state.name !== '' &&
+      this.state.job !== undefined &&
+      this.state.apartment !== undefined &&
+      this.getMonthlyBudget() > 0
+    );
   }
 
   

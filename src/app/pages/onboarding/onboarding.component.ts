@@ -24,34 +24,7 @@ export class OnboardingComponent implements OnInit {
     this.currentPage += number;
   }
 
-  canStartGame() { 
-
-    if( this.state.state.name === '' ) alert('Du musst einen Namen eingeben');
-    if( this.state.state.job === undefined ) alert('Du musst einen Job auswählen');
-    if( this.state.state.apartment === undefined ) alert('Du musst eine Wohnung auswählen');
-    if( this.state.getMonthlyBudget() <= 0 ) alert('Dein Budget ist nicht positiv. Du musst mehr verdienen oder weniger ausgeben. (Wohnung, Versicherung, Mobilität');
-
-    return (
-      this.state.state.name !== '' &&
-      this.state.state.job !== undefined &&
-      this.state.state.apartment !== undefined &&
-      this.currentPage === 6 &&
-      this.state.getMonthlyBudget() > 0
-    );
+  public startGame() {
+    this.state.startGame();
   }
-
-  startGame() {
-    if( !this.canStartGame() ) return;
-
-    // Choose starting budget
-    if(this.state.state.university) {
-      this.state.state.money = 1000;
-    } else {
-      this.state.state.money = 5000;
-    }
-
-    console.log("Starting game");
-    this.router.navigate(['/game']);
-  }
-
 }
