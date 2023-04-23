@@ -36,9 +36,6 @@ export class StateService {
     this.state.lifepoints += decision.lifeImpact;
     console.log("Player received life points: " + decision.lifeImpact)
 
-    // Life points shall be maxed out at 100
-    if (this.state.lifepoints > 100) this.state.lifepoints = 100;
-
     // Update the event list
     event.decision = decision;
     this.decisionHistory.push(event);
@@ -57,6 +54,13 @@ export class StateService {
       console.log("Investment round");
       this.router.navigate(['/investments']);
     }
+
+    // Max life points is 100
+    this.capLifePoints();
+
+    // Check for game over
+    this.checkForGameOver();
+
   }
 
   public createNewGame(demo?: boolean) {
@@ -117,6 +121,21 @@ export class StateService {
 
   getMonthlyLifePoints() {
     return 20 - (this.state.job?.stress ?? 0) - (this.state.apartment?._internalDistanceFactor ?? 0);
+  }
+
+  private capLifePoints() {
+    if (this.state.lifepoints > 100) this.state.lifepoints = 100;
+  }
+
+  /**
+   * Game over is when 
+   * life point < 50
+   * money < 0
+   */
+  private checkForGameOver() {
+    if(this.state.lifepoints < 50 || this.state.money < 0) {
+      this.router.navigate(['/game-over']);
+    }
   }
 
   

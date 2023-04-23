@@ -21,6 +21,7 @@ import { InvestComponent } from './pages/invest/invest.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { SummaryComponent } from './pages/summary/summary.component';
+import { GameOverComponent } from './pages/game-over/game-over.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { SummaryComponent } from './pages/summary/summary.component';
     SelectionComponent,
     ObJobComponent,
     InvestComponent,
-    SummaryComponent
+    SummaryComponent,
+    GameOverComponent
   ],
   imports: [
     BrowserModule,
