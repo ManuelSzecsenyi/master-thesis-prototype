@@ -15,5 +15,5 @@ jobs:
         username: ftp@demo.marginleft.at
         password: f3d#NC53d1j
         local-dir: ./dist/master-thesis-protoype/
-        server-dir: /manuels102.sg-host.com/public_html/wp-content/themes/wp_hakuma/
+        server-dir: /demo.marginleft.at/public_html/
         dry-run: false
