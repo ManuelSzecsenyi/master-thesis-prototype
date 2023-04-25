@@ -1,0 +1,965 @@
+[
+    {
+        "title": "Party",
+        "image": "party-mexicam.png",
+        "description": "Du willst eine Party für deine beste Freundin organisiieren. Magst du dafür 80€ ausgeben?",
+        "options": {
+            "accept": {
+                "financialImpact": -80,
+                "lifeImpact": 5
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -7
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Essen bestellen",
+        "image": "room-service-1-1.png",
+        "description": "Du bis super erschöpft und möchtest lieber dein Lieblingsessen bestellen. Die Kosten belaufen sich auf € 20,-. Möchtest du bestellen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Nachzahlung Strom",
+        "image": "power-usage.png",
+        "description": "Im letzten Jahr hast du zu viel Strom verbraucht. Jetzt musst du 150€ nachzahlen.",
+        "options": {
+            "accept": {
+                "financialImpact": -150,
+                "lifeImpact": 0
+            },
+            "decline": {
+                "financialImpact": -150,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Rucksack",
+        "image": "cat-backpack-1.png",
+        "description": "Du siehst den neusten Rucksack in der Werbung und möchtest ihn unbedingt haben. Die Kosten belaufen sich auf € 40,-. Möchtest du ihn kaufen?",
+        "options": {
+            "accept": {
+                "financialImpact": -40,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Medikamente",
+        "image": "medicine-bottle-5-color.png",
+        "description": "Du wurdest krank und musst Medikamente kaufen. Die Kosten belaufen sich auf € 20,-. Möchtest du die Medikamente kaufen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 1
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -10
+            }
+        },
+        "insurance": ""
+    },
+    {
+        "title": "Malen",
+        "image": "drawing-board.png",
+        "description": "Du siehst das neuste Malset in der Werbung und möchtest es unbedingt haben. Die Kosten belaufen sich auf € 40,-. Möchtest du es kaufen?",
+        "options": {
+            "accept": {
+                "financialImpact": -40,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Kryptowährungen",
+        "image": "crypto-rocket.png",
+        "description": "Deine Freundin erzählt dir von einer neuen Kryptowährung die durch die Decke gehen sollen! Magst du 200€ investieren?",
+        "options": {
+            "accept": {
+                "financialImpact": -200,
+                "lifeImpact": 1
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "moreInfo": "Die meisten Kryptowährungen sind sehr volatil und können schnell an Wert verlieren. Investiere nur Geld, dass du nicht brauchst.",
+        "insurance": null
+    },
+    {
+        "title": "Drohne",
+        "image": "drone-kit.png",
+        "description": "Wow! Die neue Drone ist so cool! Du möchtest sie unbedingt haben. Die Kosten belaufen sich auf € 1100,-. Möchtest du sie kaufen?",
+        "options": {
+            "accept": {
+                "financialImpact": -1100,
+                "lifeImpact": 5
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Hoodie",
+        "image": "hoodie.png",
+        "description": "Möchtest du dir einen neuen Hoodie kaufen? Der kostet € 30,-.",
+        "options": {
+            "accept": {
+                "financialImpact": -30,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Jeans",
+        "image": "overall-jean.png",
+        "description": "Du siehst die neusten Jeans in der Werbung und möchtest sie unbedingt haben. Die Kosten belaufen sich auf € 60,-. Möchtest du sie kaufen?",
+        "options": {
+            "accept": {
+                "financialImpact": -60,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Fußballspiel",
+        "image": "soccer-football-2.png",
+        "description": "Dein Verein spiel heute Abend und deine Freudne wollen wissen um du mitgehst. Die Tickets kosten € 20,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 5
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Handy",
+        "image": "mobile-phone-1.png",
+        "description": "Alle deine Freunde haben das neuste Handy und du möchtest es unbedingt haben. Die Kosten belaufen sich auf € 1100,-. Möchtest du es kaufen?",
+        "options": {
+            "accept": {
+                "financialImpact": -1100,
+                "lifeImpact": 5
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Billiard",
+        "image": "sports-pool-1.png",
+        "description": "Magst du heute Abend mit deinen Freunden Billiard spielen? Die Kosten belaufen sich auf € 20,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Restaurantbesuch",
+        "image": "sushi-restaurant-3.png",
+        "description": "Du bis super erschöpft und möchtest gerne mit deinen Freunden in ein gutes Restaurant gehen. Die Kosten belaufen sich auf € 60,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -60,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Essen bestellen",
+        "image": "room-service-1-1.png",
+        "description": "Du bis super erschöpft und möchtest lieber dein Lieblingsessen bestellen. Die Kosten belaufen sich auf € 20,-. Möchtest du bestellen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Waschmaschine kaputt",
+        "image": "washing-machine.png",
+        "description": "Oh nein! Deine Waschmaschine ist kaputt. Du musst dir eine neue kaufen. Die kostet € 500,-.",
+        "options": {
+            "accept": {
+                "financialImpact": -500,
+                "lifeImpact": 5
+            },
+            "decline": {
+                "financialImpact": -500,
+                "lifeImpact": 5
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Zahnarzt",
+        "image": "dentistry-tooth-broken.png",
+        "description": "Dir ist ein Zahn abgebrochen und du musst zum Zahnarzt. Die Kosten belaufen sich auf € 200,-.",
+        "options": {
+            "accept": {
+                "financialImpact": -200,
+                "lifeImpact": 0
+            },
+            "decline": {
+                "financialImpact": -200,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Bowling",
+        "image": "sports-bowling-pins.png",
+        "description": "Magst du heute Abend mit deinen Freunden Bowling spielen? Die Kosten belaufen sich auf € 20,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Wintersport",
+        "image": "sport-ski.png",
+        "description": "Am Wochenende gehen deine Freunde Skifahren. Die Kosten belaufen sich auf € 200,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -200,
+                "lifeImpact": 10
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -5
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Fernseher",
+        "image": "television-modern-widescreen.png",
+        "description": "Dein Fernseher ist kaputt und du möchtest dir einen neuen kaufen. Die Kosten belaufen sich auf € 800,-. Möchtest du ihn kaufen?",
+        "options": {
+            "accept": {
+                "financialImpact": -800,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -5
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Screen kaputt",
+        "image": "broken-phone-1.png",
+        "description": "Oh nein! Dein Handy ist dir runtergefallen und der Bildschirm muss ausgetauscht werden. Die Kosten belaufen sich auf € 120,-. Falls du eine Versicherung hast, übernimmt diese die Kosten.",
+        "options": {
+            "accept": {
+                "financialImpact": -120,
+                "lifeImpact": -1
+            },
+            "decline": {
+                "financialImpact": -120,
+                "lifeImpact": -1
+            }
+        },
+        "insurance": "PHONE"
+    },
+    {
+        "title": "Party zu laut",
+        "image": "police-car-1.png",
+        "description": "Eine Party die du organisiert hast war zu laut. Du musst eine kleine Strafe von 50€ zahlen. ",
+        "options": {
+            "accept": {
+                "financialImpact": -50,
+                "lifeImpact": -1
+            },
+            "decline": {
+                "financialImpact": -50,
+                "lifeImpact": -1
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Nachzahlung Wasser",
+        "image": "water-drop.png",
+        "description": "Du hast vergessen, dass du im letzten Monat mehr Wasser verbraucht hast als normal. Jetzt musst du 50€ nachzahlen. ",
+        "options": {
+            "accept": {
+                "financialImpact": -50,
+                "lifeImpact": 0
+            },
+            "decline": {
+                "financialImpact": -50,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Bowling",
+        "image": "sports-bowling-pins.png",
+        "description": "Magst du heute Abend mit deinen Freunden Bowling spielen? Die Kosten belaufen sich auf € 20,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Pullover",
+        "image": "hoodie.png",
+        "description": "Möchtest du dir einen neuen Pullover kaufen? Der kostet € 50,-.",
+        "options": {
+            "accept": {
+                "financialImpact": -50,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Geldbörse verloren",
+        "image": "empty-wallet-1.png",
+        "description": "Du hast leider deine Geldbörse samt 70€ Bargeld verloren.",
+        "options": {
+            "accept": {
+                "financialImpact": -70,
+                "lifeImpact": 0
+            },
+            "decline": {
+                "financialImpact": -70,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Restaurantbesuch",
+        "image": "sushi-restaurant-3.png",
+        "description": "Du bis super erschöpft und möchtest gerne mit deinen Freunden in ein Restaurant gehen. Die Kosten belaufen sich auf € 30,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -40,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Kinoabend",
+        "image": "cinema-theater-movie.png",
+        "description": "Der neuste Blockbuster ist im Kino gestartet. Du möchtest gerne mit deinen Freunden ins Kino gehen. Die Kosten belaufen sich auf € 20,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Bei Rot über die Ampel",
+        "image": "police-car-1.png",
+        "description": "Oh nein! Du hast nicht aufgepasst und bist bei Rot über die Ampel. Die Polizistin drückt leider kein Auge zu und du musst 50€ zahlen. ",
+        "options": {
+            "accept": {
+                "financialImpact": -50,
+                "lifeImpact": -1
+            },
+            "decline": {
+                "financialImpact": -50,
+                "lifeImpact": -1
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Klage",
+        "image": "courthouse-2.png",
+        "description": "Jemand verklagt dich unschuldig. Dennoch musst du den Prozess austragen und eine Rechtsvertretung besorgen. Die Kosten belaufen sich auf € 3.000,-. Falls du eine Versicherung hast, übernimmt diese die Kosten.",
+        "options": {
+            "accept": {
+                "financialImpact": -3000,
+                "lifeImpact": -7
+            },
+            "decline": {
+                "financialImpact": -3000,
+                "lifeImpact": -7
+            }
+        },
+        "insurance": "LAW"
+    },
+    {
+        "title": "Jeans",
+        "image": "overall-jean.png",
+        "description": "Du siehst die neusten Jeans in der Werbung und möchtest sie unbedingt haben. Die Kosten belaufen sich auf € 60,-. Möchtest du sie kaufen?",
+        "options": {
+            "accept": {
+                "financialImpact": -60,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Spielekonsole",
+        "image": "game-consoles-24.png",
+        "description": "Dein Freundeskreis spiel schon auf der neuen Spielekonsole. Du kannst nur mitspielen wenn du auch eine hast. Die Kosten belaufen sich auf € 550,-. Möchtest du sie kaufen?",
+        "options": {
+            "accept": {
+                "financialImpact": -550,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -5
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Geburtstagsgeschenk Papa",
+        "image": "gift-box-tag.png",
+        "description": "Magst du deinem Vater ein Geschenk für 40€ zum Geburtstag schenken?",
+        "options": {
+            "financialImpact": -40,
+            "accept": {
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -5
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Restaurantbesuch",
+        "image": "sushi-restaurant-3.png",
+        "description": "Du bis super erschöpft und möchtest gerne mit deinen Freunden in ein Restaurant gehen. Die Kosten belaufen sich auf € 30,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -40,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Geburtstagsgeschenk Mama",
+        "image": "gift-box-tag.png",
+        "description": "Magst du deiner Mutter einen Strauß Blumen für 20€ zum Geburtstag schenken?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -5
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Staubsauger",
+        "image": "happy-vacuum-cleaner.png",
+        "description": "Dein Staubsauger ist kautt gegangen. Möchtest du dir einen neuen kaufen oder lieber mit deinem Besen kehren? Der neue Staubsauger kostet € 150,-.",
+        "options": {
+            "accept": {
+                "financialImpact": -150,
+                "lifeImpact": 0
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -5
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Urlaub",
+        "image": "beach-trip-1.png",
+        "description": "Du möchtest gerne mit deinen Freunden in den Urlaub fahren. Die Kosten belaufen sich auf € 1.000,-. Möchtest du mitfahren?",
+        "options": {
+            "accept": {
+                "financialImpact": -1000,
+                "lifeImpact": 5
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -5
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Dessert",
+        "image": "berry-pie.png",
+        "description": "Magst du dir heute ein Dessert für 5€ gönnen?",
+        "options": {
+            "accept": {
+                "financialImpact": -5,
+                "lifeImpact": 1
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Party",
+        "image": "party-mexicam.png",
+        "description": "Du willst eine Party für deine beste Freundin organisiieren. Magst du dafür 80€ ausgeben?",
+        "options": {
+            "accept": {
+                "financialImpact": -80,
+                "lifeImpact": 5
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -7
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Wasserschaden",
+        "image": "water-drop.png",
+        "description": "Du hast einen Wasserschaden und der Parkettboden muss ausgetauscht werden. Die Kosten belaufen sich auf € 2.000,-. Falls du eine Versicherung hast, übernimmt diese die Kosten.",
+        "options": {
+            "accept": {
+                "financialImpact": -2000,
+                "lifeImpact": -10
+            },
+            "decline": {
+                "financialImpact": -2000,
+                "lifeImpact": -10
+            }
+        },
+        "insurance": "APARTMENT"
+    },
+    {
+        "title": "Geburtstagsgeschenk Freundin",
+        "image": "gift-box-tag.png",
+        "description": "Deine beste Freundin hat Geburtstag. Magst du ihr ein Geschenk für 40€ schenken?",
+        "options": {
+            "financialImpact": -40,
+            "accept": {
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -3
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Billiard",
+        "image": "sports-pool-1.png",
+        "description": "Magst du heute Abend mit deinen Freunden Billiard spielen? Die Kosten belaufen sich auf € 20,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Neue Lampen",
+        "image": "lightbulb-idea.png",
+        "description": "Einige deiner Lampen sind kaputt gegangen. Du kannst ein Pack für 20€ kaufen oder Kerzen benutzen.",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 1
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -5
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Thermentag",
+        "image": "spa-towel.png",
+        "description": "Du möchtest gerne mit deinen Freunden in den Thermen gehen. Die Kosten belaufen sich auf € 60,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -60,
+                "lifeImpact": 7
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -1
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Fußballspiel",
+        "image": "soccer-football-2.png",
+        "description": "Dein Verein spiel heute Abend und deine Freunde wollen wissen um du mitgehst. Die Tickets kosten € 20,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 5
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Geburtstagsgeschenk Freund",
+        "image": "gift-box-tag.png",
+        "description": "Dein bester Freund hat Geburtstag. Magst du ihm ein Geschenk für 40€ schenken?",
+        "options": {
+            "financialImpact": -40,
+            "accept": {
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -3
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Nachbarschaftsstreit",
+        "image": "courthouse-2.png",
+        "description": "Deine Vermieterin und du haben ein paar Ungereimtheiten und schleppt den Streit vor Gericht. Die Kosten belaufen sich auf € 3.000,-. Falls du eine Versicherung hast, übernimmt diese die Kosten.",
+        "options": {
+            "accept": {
+                "financialImpact": -3000,
+                "lifeImpact": -10
+            },
+            "decline": {
+                "financialImpact": -3000,
+                "lifeImpact": -10
+            }
+        },
+        "insurance": "LAW"
+    },
+    {
+        "title": "Frisör",
+        "image": "barber-shop.png",
+        "description": "Ein Frisörbesuch wäre mal wieder nötig. Dieser würde 30€ kosten.",
+        "options": {
+            "financialImpact": -30,
+            "accept": {
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -3
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Tasche",
+        "image": "cat-backpack-1.png",
+        "description": "Du siehst eine neue Tasche in der Werbung. Die Kosten belaufen sich auf € 40,-. Möchtest du sie kaufen?",
+        "options": {
+            "accept": {
+                "financialImpact": -40,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Party",
+        "image": "cheer-party-4.png",
+        "description": "Deine Freunde möchten am Wochenende in eine Bar gehen. Du musst dafür 50€ beiseite legen. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -50,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Essen bestellen",
+        "image": "room-service-1-1.png",
+        "description": "Du bis super erschöpft und möchtest lieber dein Lieblingsessen bestellen. Die Kosten belaufen sich auf € 20,-. Möchtest du bestellen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Cryptotoken",
+        "image": "crypto-rocket.png",
+        "description": "Deine Freundin erzählt dir von neuen Tokens die durch die Decke gehen sollen! Magst du 100€ investieren?",
+        "options": {
+            "accept": {
+                "financialImpact": -100,
+                "lifeImpact": 1
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "moreInfo": "Die meisten Kryptowährungen sind sehr volatil und können schnell an Wert verlieren. Investiere nur Geld, dass du nicht brauchst.",
+        "insurance": null
+    },
+    {
+        "title": "Restaurantbesuch",
+        "image": "sushi-restaurant-3.png",
+        "description": "Du bis super erschöpft und möchtest gerne mit deinen Freunden in ein gutes Restaurant gehen. Die Kosten belaufen sich auf € 60,-. Möchtest du mitgehen?",
+        "options": {
+            "accept": {
+                "financialImpact": -60,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Frisör",
+        "image": "barber-shop.png",
+        "description": "Ein Frisörbesuch wäre mal wieder nötig. Dieser würde 30€ kosten.",
+        "options": {
+            "financialImpact": -30,
+            "accept": {
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -3
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Geburtstagsgeschenk",
+        "image": "gift-box-tag.png",
+        "description": "Eine Freundin fragt dich ob du bei einem Geburtstagsgeschenk mitmachen willst. Es kostet 20€.",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -5
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "StartUp",
+        "image": "startup-benefit.png",
+        "description": "Dein Freund möchte sich gerne € 2.000,- für die Gründung seines StartUps ausborgen. Er verspricht dir, dass er dir das Geld in 2 Jahren zurückzahlt plus 10% Zinsen.",
+        "options": {
+            "accept": {
+                "financialImpact": -2000,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -1
+            }
+        },
+        "insurance": null,
+        "moreInfo": "Die meisten StartUps scheitern. Wenn dein Freund das Geld nicht zurückzahlen kann, kannst du es ihm nicht mehr zurückfordern."
+    },
+    {
+        "title": "Dessert",
+        "image": "berry-pie.png",
+        "description": "Magst du dir heute ein Dessert für 5€ gönnen?",
+        "options": {
+            "accept": {
+                "financialImpact": -5,
+                "lifeImpact": 1
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": 0
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Medikamente",
+        "image": "medicine-bottle-5-color.png",
+        "description": "Du wurdest krank und musst Medikamente kaufen. Die Kosten belaufen sich auf € 20,-. Möchtest du die Medikamente kaufen?",
+        "options": {
+            "accept": {
+                "financialImpact": -20,
+                "lifeImpact": 1
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -10
+            }
+        },
+        "insurance": ""
+    },
+    {
+        "title": "Urlaub",
+        "image": "beach-trip-1.png",
+        "description": "Du möchtest gerne mit deinen Freunden in den Urlaub fahren. Die Kosten belaufen sich auf € 1.000,-. Möchtest du mitfahren?",
+        "options": {
+            "accept": {
+                "financialImpact": -1000,
+                "lifeImpact": 5
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -5
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Feuerschaden",
+        "image": "fire-detector.png",
+        "description": "Oh nein! Du hast vergessen den Herd auszuschalten und deine Küche ist in Flammen aufgegangen. Die Kosten belaufen sich auf € 5.000,-. Falls du eine Versicherung hast, übernimmt diese die Kosten.",
+        "options": {
+            "accept": {
+                "financialImpact": -5000,
+                "lifeImpact": -10
+            },
+            "decline": {
+                "financialImpact": -5000,
+                "lifeImpact": -10
+            }
+        },
+        "insurance": null
+    }
+]
