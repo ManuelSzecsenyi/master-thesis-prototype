@@ -61,7 +61,7 @@ export class InvestComponent implements OnInit {
   }
 
   getLifePointDelta() {
-    return this.moneyForEntertainment / 100 * 0.5;
+    return this.moneyForEntertainment / 100;
   }
 
   getSalaryDelta() { 

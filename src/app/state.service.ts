@@ -62,10 +62,12 @@ export class StateService {
       
       console.log("Player received monthly life points: " + this.getMonthlyLifePoints());
       this.state.lifepoints += this.getMonthlyLifePoints();
+
+      window.alert("Du hast dein Gehalt erhalten: " + this.getMonthlyBudget() + "€. Durch den Stress in der Arbeit hast du " + this.getMonthlyLifePoints() + " Lebenspunkte verloren.");
     }
 
-    // Handle investments every 15 rounds
-    if (this.state.round % 15 === 0) {
+    // Handle investments every 10 rounds
+    if (this.state.round % 10 === 0) {
       console.log("Investment round");
       this.router.navigate(['/investments']);
     }
