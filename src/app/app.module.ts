@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule, HammerModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,7 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { SummaryComponent } from './pages/summary/summary.component';
 import { GameOverComponent } from './pages/game-over/game-over.component';
+import { register } from 'swiper/element/bundle';
 
+register();
 
 @NgModule({
   declarations: [
@@ -53,6 +55,7 @@ import { GameOverComponent } from './pages/game-over/game-over.component';
     NgxSliderModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

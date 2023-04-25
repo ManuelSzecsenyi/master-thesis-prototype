@@ -1,6 +1,34 @@
-<h1>Willkommen</h1>
+<h1 class="text-center">
+    Willkommen bei <br>
+    <span class="text-5xl">financewise</span>
+</h1>
+<swiper-container class="text-center my-5 py-10" navigation="true" pagination="true" scrollbar="true">
+    <swiper-slide>
+        <img class="max-w-full w-72 block mx-auto" src="assets/wireframe.png" />
+        <h2>Lege zuerst deinen Lebensplan fest</h2>
+    </swiper-slide>
+    
+    <swiper-slide>
+        <img class="max-w-full w-72 block mx-auto" src="assets/shopping-using-discount-coupons.png" />
+        <h2>Entscheide dich für oder gegen Ausgaben</h2>
+    </swiper-slide>
 
-<p>Lifepoints sind capped mit 100 und dürfen nicht unter 50 sinken</p>
-<p>Alle 5 Runden kommt das Gehalt & verlierst Life points. Wie viel das ist hängt vom Job & Apartment ab</p>
-<p>Alle 10 Runden kann investiert werden</p>
-<app-button routerLink="onboarding" text="Jetzt starten"></app-button>
+    <swiper-slide>
+        <img class="max-w-full w-72 block mx-auto" src="assets/finances-chasing-money.png" />
+        <h2>Alle 5 Runden  bekommst du dein Gehalt</h2>
+    </swiper-slide>
+
+    <swiper-slide>
+        <img class="max-w-full w-72 block mx-auto" src="assets/finances-saving-money.png" />
+        <h2>Alle 10 Runden kannst du dein Geld “anlegen”</h2>
+    </swiper-slide>
+
+    <swiper-slide>
+        <img class="max-w-full w-72 block mx-auto" src="assets/business-graph-collapsing-with-money-burned.png" />
+        <h2>Bleib mit deinem Budget positiv!<br>
+            Habe mehr als 50% Lebenspunkte!<br>
+            Überstehe 60 Runden</h2>
+    </swiper-slide>
+</swiper-container>
+
+<app-button routerLink="onboarding" text="Spiel starten"></app-button>
