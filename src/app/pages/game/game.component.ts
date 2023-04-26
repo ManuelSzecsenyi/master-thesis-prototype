@@ -12,6 +12,12 @@ export class GameComponent implements OnInit {
 
   currentEvent!: IEvent;
 
+  moneyImpact: number = 0;
+
+  lpImpact: number = 0;
+
+  showChange = false;
+
   constructor(
     public stateService: StateService,
     public eventService: QuestionService
@@ -48,15 +54,18 @@ export class GameComponent implements OnInit {
   decisionMade(decision: boolean) {
 
     // Make the decision
-    this.stateService.makeDecision(this.currentEvent, decision ? this.currentEvent.options.accept : this.currentEvent.options.decline);
+    [this.moneyImpact, this.lpImpact] = this.stateService.makeDecision(this.currentEvent, decision ? this.currentEvent.options.accept : this.currentEvent.options.decline);
     
+    this._handleChangeVisibility();
+
     // Get a new event
     this.getNewEvent()
   }
 
-  getMonth(): number {
-    // 12 rounds per year
-    return Math.floor(this.stateService.state.round / 12)
+  private _handleChangeVisibility() {
+    this.showChange = true 
+
+    window.setTimeout(() => { this.showChange = false }, 2500);
   }
 
 }

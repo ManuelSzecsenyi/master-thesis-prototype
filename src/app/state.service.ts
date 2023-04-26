@@ -29,7 +29,9 @@ export class StateService {
     this.decisionHistory = [];
   }
 
-  public makeDecision(event: IEvent, decision: IOption) {
+  public makeDecision(event: IEvent, decision: IOption): number[] {
+
+    let moneyImpact = 0, lpImpact = 0;
 
     console.log("--------------------");
 
@@ -44,11 +46,11 @@ export class StateService {
         // No impact
       } else {
         // No insurance, handle impact
-        this.handleDecisionImpact(decision);
+      [moneyImpact, lpImpact] = this.handleDecisionImpact(decision);
       }
 
     } else {
-      this.handleDecisionImpact(decision);
+      [moneyImpact, lpImpact] = this.handleDecisionImpact(decision);
     }
 
     // Update the event list
@@ -77,6 +79,8 @@ export class StateService {
 
     // Check for game over
     this.checkForGameOver();
+
+    return [moneyImpact, lpImpact];
 
   }
 
@@ -132,7 +136,7 @@ export class StateService {
     if (this.state.lifepoints > 100) this.state.lifepoints = 100;
   }
 
-  private handleDecisionImpact(decision: IOption) {
+  private handleDecisionImpact(decision: IOption): number[] {
 
     // Update the money
     this.state.money += decision.financialImpact
@@ -141,6 +145,8 @@ export class StateService {
     // Update the life points
     this.state.lifepoints += decision.lifeImpact;
     console.log("Player life points impact: " + decision.lifeImpact)
+
+    return [decision.financialImpact, decision.lifeImpact];
   }     
 
   /**
