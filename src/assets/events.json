@@ -517,8 +517,8 @@
         "image": "gift-box-tag.png",
         "description": "Magst du deinem Vater ein Geschenk für 40€ zum Geburtstag schenken?",
         "options": {
-            "financialImpact": -40,
             "accept": {
+                "financialImpact": -40,
                 "lifeImpact": 2
             },
             "decline": {
@@ -641,22 +641,6 @@
         "insurance": "APARTMENT"
     },
     {
-        "title": "Geburtstagsgeschenk Freundin",
-        "image": "gift-box-tag.png",
-        "description": "Deine beste Freundin hat Geburtstag. Magst du ihr ein Geschenk für 40€ schenken?",
-        "options": {
-            "financialImpact": -40,
-            "accept": {
-                "lifeImpact": 2
-            },
-            "decline": {
-                "financialImpact": 0,
-                "lifeImpact": -3
-            }
-        },
-        "insurance": null
-    },
-    {
         "title": "Billiard",
         "image": "sports-pool-1.png",
         "description": "Magst du heute Abend mit deinen Freunden Billiard spielen? Die Kosten belaufen sich auf € 20,-. Möchtest du mitgehen?",
@@ -668,6 +652,22 @@
             "decline": {
                 "financialImpact": 0,
                 "lifeImpact": -2
+            }
+        },
+        "insurance": null
+    },
+    {
+        "title": "Geburtstagsgeschenk Freundin",
+        "image": "gift-box-tag.png",
+        "description": "Deine beste Freundin hat Geburtstag. Magst du ihr ein Geschenk für 40€ schenken?",
+        "options": {
+            "accept": {
+                "financialImpact": -40,
+                "lifeImpact": 2
+            },
+            "decline": {
+                "financialImpact": 0,
+                "lifeImpact": -3
             }
         },
         "insurance": null
@@ -724,9 +724,9 @@
         "title": "Geburtstagsgeschenk Freund",
         "image": "gift-box-tag.png",
         "description": "Dein bester Freund hat Geburtstag. Magst du ihm ein Geschenk für 40€ schenken?",
-        "options": {
-            "financialImpact": -40,
+        "options": {            
             "accept": {
+                "financialImpact": -40,
                 "lifeImpact": 2
             },
             "decline": {
@@ -756,9 +756,9 @@
         "title": "Frisör",
         "image": "barber-shop.png",
         "description": "Ein Frisörbesuch wäre mal wieder nötig. Dieser würde 30€ kosten.",
-        "options": {
-            "financialImpact": -30,
+        "options": {            
             "accept": {
+                "financialImpact": -30,
                 "lifeImpact": 2
             },
             "decline": {
@@ -854,8 +854,8 @@
         "image": "barber-shop.png",
         "description": "Ein Frisörbesuch wäre mal wieder nötig. Dieser würde 30€ kosten.",
         "options": {
-            "financialImpact": -30,
             "accept": {
+                "financialImpact": -30,
                 "lifeImpact": 2
             },
             "decline": {

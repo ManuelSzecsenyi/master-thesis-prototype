@@ -80,8 +80,8 @@ export class StateService {
     // Check for game over
     this.checkForGameOver();
 
+    console.log("Vermögen: ", this.state.money, "LP: ", this.state.lifepoints);
     return [moneyImpact, lpImpact];
-
   }
 
   startGame() {
