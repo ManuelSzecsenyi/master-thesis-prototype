@@ -80,6 +80,11 @@ export class StateService {
     // Check for game over
     this.checkForGameOver();
 
+    // Check for game won
+    if(this.state.round >= 2) {
+      this.router.navigate(['/summary']);
+    }
+
     console.log("Vermögen: ", this.state.money, "LP: ", this.state.lifepoints);
     return [moneyImpact, lpImpact];
   }
