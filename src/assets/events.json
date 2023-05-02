@@ -2,7 +2,7 @@
     {
         "title": "Party",
         "image": "party-mexicam.png",
-        "description": "Du willst eine Party für deine beste Freundin organisiieren. Magst du dafür 80€ ausgeben?",
+        "description": "Du willst eine Party für deine beste Freundin organisieren. Magst du dafür 80€ ausgeben?",
         "options": {
             "accept": {
                 "financialImpact": -80,
@@ -45,7 +45,7 @@
                 "lifeImpact": 0
             }
         },
-        "insurance": null
+        "insurance": "NOT_INSURABLE"
     },
     {
         "title": "Rucksack",
@@ -243,7 +243,7 @@
     {
         "title": "Waschmaschine kaputt",
         "image": "washing-machine.png",
-        "description": "Oh nein! Deine Waschmaschine ist kaputt. Du musst dir eine neue kaufen. Die kostet € 500,-.",
+        "description": "Oh nein! Deine Waschmaschine ist kaputt. Der Schaden wird nicht von einer Versicherung gedeckt. Du musst dir eine neue kaufen. Die kostet € 500,-.",
         "options": {
             "accept": {
                 "financialImpact": -500,
@@ -254,7 +254,7 @@
                 "lifeImpact": 5
             }
         },
-        "insurance": null
+        "insurance": "NOT_INSURABLE"
     },
     {
         "title": "Zahnarzt",
@@ -270,7 +270,7 @@
                 "lifeImpact": 0
             }
         },
-        "insurance": null
+        "insurance": "NOT_INSURABLE"
     },
     {
         "title": "Bowling",
@@ -350,7 +350,7 @@
                 "lifeImpact": -1
             }
         },
-        "insurance": null
+        "insurance": "NOT_INSURABLE"
     },
     {
         "title": "Nachzahlung Wasser",
@@ -366,7 +366,7 @@
                 "lifeImpact": 0
             }
         },
-        "insurance": null
+        "insurance": "NOT_INSURABLE"
     },
     {
         "title": "Bowling",
@@ -414,7 +414,7 @@
                 "lifeImpact": 0
             }
         },
-        "insurance": null
+        "insurance": "NOT_INSURABLE"
     },
     {
         "title": "Restaurantbesuch",
@@ -462,7 +462,7 @@
                 "lifeImpact": -1
             }
         },
-        "insurance": null
+        "insurance": "NOT_INSURABLE"
     },
     {
         "title": "Klage",
@@ -960,6 +960,6 @@
                 "lifeImpact": -10
             }
         },
-        "insurance": null
+        "insurance": "APARTMENT"
     }
 ]

@@ -48,7 +48,6 @@ export class InvestComponent implements OnInit {
   }
 
   getNewSalary() {
-
     //@ts-ignore
     return this.stateService.state.job.salary + this.getSalaryDelta();
   }

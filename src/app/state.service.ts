@@ -81,7 +81,7 @@ export class StateService {
     this.checkForGameOver();
 
     // Check for game won
-    if(this.state.round >= 2) {
+    if(this.state.round >= 60) {
       this.router.navigate(['/summary']);
     }
 

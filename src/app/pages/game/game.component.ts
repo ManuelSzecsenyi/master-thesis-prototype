@@ -40,6 +40,7 @@ export class GameComponent implements OnInit {
 
   getNewEvent() {
     this.currentEvent = this.eventService.getNextEvent();
+    console.log(this.currentEvent)
     
     if(this.currentEvent == null) {
       console.log("No more events"); // TODO: End game

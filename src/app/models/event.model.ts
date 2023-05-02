@@ -12,8 +12,6 @@ export interface IEvent {
 }
 
 export interface IOption {
-    title?: string;
     financialImpact: number;
     lifeImpact: number;
-    precondition?: any;
 }
