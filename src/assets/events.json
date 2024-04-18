@@ -77,7 +77,7 @@
                 "lifeImpact": -10
             }
         },
-        "insurance": ""
+        "insurance": null
     },
     {
         "title": "Malen",
@@ -928,7 +928,7 @@
                 "lifeImpact": -10
             }
         },
-        "insurance": ""
+        "insurance": null
     },
     {
         "title": "Urlaub",

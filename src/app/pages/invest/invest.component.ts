@@ -32,7 +32,7 @@ export class InvestComponent implements OnInit {
 
   /**
    * Called when the slider value changes
-   * All three slider values in same shall not be greater then the players money
+   * All two slider values in same shall not be greater then the players money
    */
   onSliderChange() {
 

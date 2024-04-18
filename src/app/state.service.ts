@@ -3,7 +3,6 @@ import { IState } from './models/state.model';
 import { IEvent, IOption } from './models/event.model';
 import { GAME_CONFIG, IGameConfig } from './models/config.model';
 import { Router } from '@angular/router';
-import { QuestionService } from './services/question.service';
 
 @Injectable({
   providedIn: 'root'
