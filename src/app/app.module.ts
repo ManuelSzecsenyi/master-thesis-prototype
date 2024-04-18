@@ -19,10 +19,10 @@ import { SelectionComponent } from './components/selection/selection.component';
 import { ObJobComponent } from './pages/onboarding/ob-job/ob-job.component';
 import { InvestComponent } from './pages/invest/invest.component';
 import { HttpClientModule } from '@angular/common/http';
-import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { SummaryComponent } from './pages/summary/summary.component';
 import { GameOverComponent } from './pages/game-over/game-over.component';
 import { register } from 'swiper/element/bundle';
+import { StoreModule } from '@ngrx/store';
 
 register();
 
@@ -52,7 +52,7 @@ register();
     FormsModule,
     HammerModule,
     HttpClientModule,
-    NgxSliderModule
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent],

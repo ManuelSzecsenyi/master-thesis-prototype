@@ -27,7 +27,7 @@ export class GameComponent implements OnInit {
 
     // Retry until we have an event
     window.setTimeout(() => {
-      this.getNewEvent()    
+      this.getNewEvent()
     }, 100);
 
     // Prevent accidental page reload when the game is running
@@ -35,14 +35,16 @@ export class GameComponent implements OnInit {
       event.preventDefault();
       event.returnValue = '';
     });
-    
+
+    this.stateService.loadStateFromLocalStorage();
+
   }
 
   getNewEvent() {
     this.currentEvent = this.eventService.getNextEvent();
     console.log(this.currentEvent)
-    
-    if(this.currentEvent == null) {
+
+    if (this.currentEvent == null) {
       console.log("No more events"); // TODO: End game
     }
   }
@@ -56,7 +58,7 @@ export class GameComponent implements OnInit {
 
     // Make the decision
     [this.moneyImpact, this.lpImpact] = this.stateService.makeDecision(this.currentEvent, decision ? this.currentEvent.options.accept : this.currentEvent.options.decline);
-    
+
     this._handleChangeVisibility();
 
     // Get a new event
@@ -64,7 +66,7 @@ export class GameComponent implements OnInit {
   }
 
   private _handleChangeVisibility() {
-    this.showChange = true 
+    this.showChange = true
 
     window.setTimeout(() => { this.showChange = false }, 2500);
   }
