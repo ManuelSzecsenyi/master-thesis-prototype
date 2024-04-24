@@ -4,21 +4,32 @@
 
 
 @layer base {
-    body {
-      @apply text-secondary;
-    }
-    h1 {
-      @apply text-3xl font-bold mb-5;
-    }
-    h2 {
-      @apply text-xl mt-3;
-    }
-
-    h3 {
-      @apply text-xl mb-1 font-medium;
-    }
-
-    h4 {
-      @apply text-lg mb-1;
-    }
+  body {
+    @apply text-secondary;
   }
+
+  h1 {
+    @apply text-3xl font-bold mb-5;
+  }
+
+  h2 {
+    @apply text-xl mt-3;
+  }
+
+  h3 {
+    @apply text-xl mb-1 font-medium;
+  }
+
+  h4 {
+    @apply text-lg mb-1;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}

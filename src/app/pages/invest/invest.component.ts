@@ -28,6 +28,16 @@ export class InvestComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.stateService.loadStateFromLocalStorage();
+
+    console.log(this.stateService.state);
+
+    this.sliderOptions = {
+      floor: 0,
+      ceil: this.stateService.state.money,
+      step: 100,
+      showTicks: true
+    }
   }
 
   /**
@@ -36,10 +46,10 @@ export class InvestComponent implements OnInit {
    */
   onSliderChange() {
 
-    this.total = this.moneyForEducation + this.moneyForEntertainment;    
+    this.total = this.moneyForEducation + this.moneyForEntertainment;
 
-    while(this.total > this.stateService.state.money) {
-      
+    while (this.total > this.stateService.state.money) {
+
       this.moneyForEducation -= 100;
       this.moneyForEntertainment -= 100;
       this.total = this.moneyForEducation + this.moneyForEntertainment;
@@ -49,10 +59,10 @@ export class InvestComponent implements OnInit {
 
   getNewSalary() {
     //@ts-ignore
-    return this.stateService.state.job.salary + this.getSalaryDelta();
+    return Math.round(this.stateService.state.job.salary + this.getSalaryDelta());
   }
 
-  getNewLifePoints() { 
+  getNewLifePoints() {
     const lp = this.stateService.state.lifepoints + this.getLifePointDelta();
     if (lp > 100) return 100;
 
@@ -63,16 +73,18 @@ export class InvestComponent implements OnInit {
     return this.moneyForEntertainment / 100;
   }
 
-  getSalaryDelta() { 
-    return this.moneyForEducation * 0.3;
+  getSalaryDelta() {
+    return Math.round(this.moneyForEducation * 0.3);
   }
 
   invest() {
-      
-      this.stateService.state.money -= this.total;
-      this.stateService.state.job!.salary = this.getNewSalary();
-      this.stateService.state.lifepoints = this.getNewLifePoints();
-  
-      this.router.navigate(['/game']);
+
+    this.stateService.state.money -= this.total;
+    this.stateService.state.job!.salary = this.getNewSalary();
+    this.stateService.state.lifepoints = this.getNewLifePoints();
+
+    this.stateService.saveStateToLocalStorage();
+
+    this.router.navigate(['/game']);
   }
 }

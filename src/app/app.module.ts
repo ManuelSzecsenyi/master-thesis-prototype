@@ -23,6 +23,8 @@ import { SummaryComponent } from './pages/summary/summary.component';
 import { GameOverComponent } from './pages/game-over/game-over.component';
 import { register } from 'swiper/element/bundle';
 import { StoreModule } from '@ngrx/store';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatSliderModule } from '@angular/material/slider';
 
 register();
 
@@ -52,9 +54,12 @@ register();
     FormsModule,
     HammerModule,
     HttpClientModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({}, {}),
+    MatSliderModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
