@@ -1,0 +1,43 @@
+name: Deploy 
+on:
+  push:
+    
+jobs: 
+    deploy: 
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+    
+        - name: Setup Node.js
+          uses: actions/setup-node@v2
+          with:
+            node-version: '20'
+
+        - name: Install dependencies
+          run: | 
+            cd ./app
+            npm install
+
+        - name: Build
+          run: | 
+            cd ./app
+            npm run build
+
+        - name: Log files
+          run: | 
+            ls -la
+            cd ./app
+            ls -la
+            cd ./dist
+            ls -la
+
+        - name: 📂 Upload
+          uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+          with:
+            server: gfram1027.siteground.biz
+            username: github@demo.marginleft.at
+            password: ${{ secrets.ftp_password }}
+            dry-run: false
+            local-dir: ./dist/master-thesis-protoype/
+            server-dir: /demo.marginleft.at/public_html
