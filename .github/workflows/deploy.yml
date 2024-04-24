@@ -16,18 +16,14 @@ jobs:
 
         - name: Install dependencies
           run: | 
-            cd ./app
             npm install
 
         - name: Build
           run: | 
-            cd ./app
             npm run build
 
         - name: Log files
           run: | 
-            ls -la
-            cd ./app
             ls -la
             cd ./dist
             ls -la
