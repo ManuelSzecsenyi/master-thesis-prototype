@@ -8,6 +8,11 @@ jobs:
         steps:
         - name: Checkout
           uses: actions/checkout@v2
+
+        - name: Replace environment variables
+          run: |
+            sed -i "s/REPLACE_WITH_SUPABASE_ANON_KEY/${{ secrets.SUPABASE_ANON_KEY }}/g" src/environments/environment.prod.ts
+            sed -i "s#REPLACE_WITH_SUPABASE_URL#${{ secrets.SUPABASE_URL }}#g" src/environments/environment.prod.ts
     
         - name: Setup Node.js
           uses: actions/setup-node@v2
@@ -20,7 +25,7 @@ jobs:
 
         - name: Build
           run: | 
-            npm run build
+            npm run build --configuration=production
 
         - name: Log files
           run: | 

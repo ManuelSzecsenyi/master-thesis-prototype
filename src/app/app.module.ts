@@ -25,6 +25,15 @@ import { register } from 'swiper/element/bundle';
 import { StoreModule } from '@ngrx/store';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSliderModule } from '@angular/material/slider';
+import { createClient } from '@supabase/supabase-js'
+import { environment } from 'environments/environment';
+
+const SUPABASE_URL = environment.SUPABASE_URL;
+const SUPABASE_KEY = environment.SUPABASE_ANON_KEY;
+
+const client = createClient(SUPABASE_URL, SUPABASE_KEY)
+
+export const channel = client.channel('demo-channel')
 
 register();
 
@@ -64,3 +73,5 @@ register();
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
+
+

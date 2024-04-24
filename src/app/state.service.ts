@@ -3,6 +3,7 @@ import { IState } from './models/state.model';
 import { IEvent, IOption } from './models/event.model';
 import { GAME_CONFIG, IGameConfig } from './models/config.model';
 import { Router } from '@angular/router';
+import { channel } from './app.module';
 
 @Injectable({
   providedIn: 'root'
@@ -81,6 +82,16 @@ export class StateService {
 
     // Check for game won
     if (this.state.round >= 60) {
+      channel
+        .send({
+          type: 'broadcast',
+          event: 'GAME_WON',
+          payload: {
+            name: this.state.name,
+            state: this.state
+          },
+        })
+        .then((resp) => console.log(resp))
       this.router.navigate(['/summary']);
     }
 
@@ -98,6 +109,17 @@ export class StateService {
     } else {
       this.state.money = 5000;
     }
+
+    channel
+      .send({
+        type: 'broadcast',
+        event: 'GAME_START',
+        payload: {
+          name: this.state.name,
+          state: this.state
+        },
+      })
+      .then((resp) => console.log(resp))
 
     this.saveStateToLocalStorage();
 
@@ -153,6 +175,7 @@ export class StateService {
     this.state.lifepoints += decision.lifeImpact;
     console.log("Player life points impact: " + decision.lifeImpact)
 
+
     return [decision.financialImpact, decision.lifeImpact];
   }
 
@@ -163,6 +186,19 @@ export class StateService {
    */
   private checkForGameOver() {
     if (this.state.lifepoints < 50 || this.state.money < 0) {
+
+      channel
+        .send({
+          type: 'broadcast',
+          event: 'GAME_OVER',
+          payload: {
+            name: this.state.name,
+            state: this.state
+          },
+        })
+        .then((resp) => console.log(resp))
+
+
       this.router.navigate(['/game-over']);
     }
   }
