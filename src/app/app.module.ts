@@ -26,7 +26,7 @@ import { StoreModule } from '@ngrx/store';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSliderModule } from '@angular/material/slider';
 import { createClient } from '@supabase/supabase-js'
-import { environment } from 'environments/environment';
+import { environment } from '../environments/environment';
 
 const SUPABASE_URL = environment.SUPABASE_URL;
 const SUPABASE_KEY = environment.SUPABASE_ANON_KEY;
