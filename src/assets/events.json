@@ -563,7 +563,7 @@
     {
         "title": "Staubsauger",
         "image": "happy-vacuum-cleaner.png",
-        "description": "Dein Staubsauger ist kautt gegangen. Möchtest du dir einen neuen kaufen oder lieber mit deinem Besen kehren? Der neue Staubsauger kostet € 150,-.",
+        "description": "Dein Staubsauger ist kaputt gegangen. Möchtest du dir einen neuen kaufen oder lieber mit deinem Besen kehren? Der neue Staubsauger kostet € 150,-.",
         "options": {
             "accept": {
                 "financialImpact": -150,
